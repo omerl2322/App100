@@ -1,0 +1,143 @@
+<resources>
+    <!-- title to our app-->
+    <string name="app_name">  App 100</string>
+    <!--///////////////////////////////////////////////////-->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment\n omer and michal \n
+    joni </string>
+    <!--variables to our explain popup-->
+    <!--///////////////////////////////////////////////////////////////////////////////-->
+    <string name="car"> <![CDATA[<b><u> האופציות לבחירה הם:</u></b> <br>
+                        -רכב חוסם <br>
+                        -רכב חונה באיסור <br>
+                        -רכב מפריע לתנועה <br>
+                        -אחר <br>
+    ]]></string>
+    <!--///////////////////////////////////////////////////////////////////////////////-->
+    <string name="propertyCrimes"> <![CDATA[<b><u> האופציות לבחירה הם:</u></b> <br>
+                        -גניבה <br>
+                        -הצתה <br>
+                        -גרימת נזק <br>
+                        -אחר <br>
+    ]]></string>
+    <!--///////////////////////////////////////////////////////////////////////////////-->
+    <string name="infrastructure"> <![CDATA[<b><u> האופציות לבחירה הם:</u></b> <br>
+                        -תקלת רמזורים <br>
+                        -תמרורים <br>
+                        -סימני דרך <br>
+                        -אחר <br>
+    ]]></string>
+    <!--///////////////////////////////////////////////////////////////////////////////-->
+    <!-- 3 dot button titles-->
+    <string name="exitApp"> יציאה </string>
+    <string name="updatePersonalDetails">  עדכן פרטים אישיים </string>
+    <!--///////////////////////////////////////////////////////////////////////////////-->
+    <!-- menu choice-->
+    <string name="reportOn"> <![CDATA[<b> דווח על </b>]]> </string>
+    <string name="myReports">  <![CDATA[<b> הדיווחים שלי </b>]]> </string>
+    <!--///////////////////////////////////////////////////////////////////////////////-->
+    <string name="stringbRegister"> הירשם </string>
+    <!--///////////////////////////////////////////////////////////////////////////////-->
+    <!-- Car form string -->
+    <string name="cardata"> <![CDATA[<b> פרטי הדיווח </b>]]> </string>
+    <string name="eventType"> סוג האירוע </string>
+    <string name="licenseNum"> מספר לוחית רישוי </string>
+    <string name="eventDes"> תיאור האירוע </string>
+    <string name="eventHour"> שעת האירוע </string>
+    <string name="eventDate"> תאריך האירוע </string>
+    <string name="eventLocation"> מיקום האירוע </string>
+    <string name="eventDoc"> <![CDATA[<b> תיעוד האירוע </b>]]> </string>
+    <!--///////////////////////////////////////////////////////////////////////////////-->
+    <string name="reportOnCar">דווח על רכב</string>
+    <string name="detailsAboutTheReport">פרטי הדיווח</string>
+    <string name="typeOfEvent">סוג האירוע</string>
+    <string name="licensePlateNumber">מספר לוחית רישוי</string>
+    <string name="describeTheEvent">תיאור האירוע</string>
+    <string name="timeOfTheEvent">שעת האירוע</string>
+    <string name="eventLocationInput">לחץ לאיתור אוט או הזן את מיקום האירוע ידנית </string>
+    <string name="eventRecord">תיעוד האירוע</string>
+    <string name="send">שלח</string>
+
+    <string name="eventsTypesDialogTitle">בחר סוג אירוע</string>
+    <string-array name="eventsTypes">
+        <item>רכב חוסם</item>
+        <item>רוכב חונה באיסור</item>
+        <item>רכש נטוש שרוף</item>
+        <item>רכב משתולל</item>
+        <item>רכב מפריע לתנועה</item>
+        <item>אחר</item>
+    </string-array>
+    <!--///////////////////////////////////////////////////////////////////////////////-->
+
+    <string name="alertMessage">בעת לחיצה על כפתור "הירשם" הנך מאשר/ת כי פרטיך נכונים ומדויקים</string>
+    <string name="instFinsh">הנחיות והמשך טיפול</string>
+    <string name="instTrans">פנייתך הועברה למוקד</string>
+    <string name="instNum">מספר הפנייה לבירורים הינו</string>
+    <string name="instEvent">הנחיות לאירוע</string>
+    <string name="instEnd">מודים לך על שיתוף הפעולה</string>
+    <string name="instPolice">משטרת ישראל</string>
+    <!--///////////////////////////////////////////////////////////////////////////////-->
+    <string name="loginString">כניסה לשירות</string>
+    <string name="registrationString">רישום לשירות</string>
+    <!--///////////////////////////////////////////////////////////////////////////////-->
+
+    <string name="reportOnProperty">דווח על עבירת רכוש</string>
+    <string name="lifeDanger">האם ישנה סכנת חיים?</string>
+    <string name="ownerProperty">האם אתה בעל הרכוש</string>
+    <string name="suspectDescription">תיאור החשוד</string>
+    <string-array name="eventsTypesProperty">
+        <item>גניבה</item>
+        <item>הצתה</item>
+        <item>גרימת נזק</item>
+        <item>אחר</item>
+    </string-array>
+
+    <!--///////////////////////////////////////////////////////////////////////////////-->
+
+    <string name="reportOnNoise">דווח על מטרד רעש</string>
+    <string name="alcohol">האם מעורב אלכוהול</string>
+    <string name="Weapon">המצאות נשק חם או קר</string>
+    <string name="NoisePop">סוג אוכלוסיה</string>
+    <string-array name="eventsTypesNoise">
+        <item>נוער</item>
+        <item>מבוגרים</item>
+        <item>בני מיעוטים</item>
+        <item>אחר</item>
+    </string-array>
+     <string name="NoiseCrimes"> <![CDATA[<b><u> האופציות לבחירה הם:</u></b> <br>
+                        -מטרד רעש על ידי: <br>
+                        -מבוגרים <br>
+                        -קטינים <br>
+                        -בני מיעוטים <br>
+    ]]></string>
+
+    <!--///////////////////////////////////////////////////////////////////////////////-->
+
+    <string name="reportOnInf">דווח על תקלת תשתית</string>
+    <string name="area">אזור האירוע</string>
+    <string-array name="eventsTypesInf">
+        <item>תקלת רמזורים</item>
+        <item>תמרורים</item>
+        <item>סימני דרך</item>
+        <item>אחר</item>
+    </string-array>
+     <string name="InfCrimes"> <![CDATA[<b><u> האופציות לבחירה הם:</u></b> <br>
+                        -תקלת רמזורים <br>
+                        -תמרורים <br>
+                        -סימני דרך <br>
+                        -אחר <br>
+    ]]></string>
+    <string-array name="eventsTypesInfArea">
+        <item>כביש מהיר</item>
+        <item>כביש בין עירוני</item>
+        <item>כביש עירוני</item>
+        <item>שכונת מגורים</item>
+        <item>נתיב עפר</item>
+        <item>אחר</item>
+    </string-array>
+
+    <string name="Other"> <![CDATA[<b><u> במסך זה הזן אירוע אשר אינו מופיע באחת מהקטגוריות המוצעות</u></b> <br>
+    ]]></string>
+
+    <string name="reportOnOther">דווח על אחר</string>
+</resources>

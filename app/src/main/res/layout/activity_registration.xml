@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.michal.app100.Registration"
+    android:background="@drawable/simbol4">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:hint="סיסמא"
+                android:gravity="right|center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/emailR"
+                android:layout_marginTop="19dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/passwordR"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:layout_marginTop="20dp"
+                android:id="@+id/emailR"
+                android:hint="כתובת דואר אלקטרוני"
+                android:layout_below="@+id/Pnumber"
+                android:layout_alignEnd="@+id/passwordR"
+                android:layout_alignStart="@+id/passwordR"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/IDtext"
+                android:hint="תעודת זהות"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="11dp"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textDirection="rtl"
+                android:textColorLink="?attr/colorPrimary"
+                android:layout_alignEnd="@+id/Fname"
+                android:layout_alignStart="@+id/Fname" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/Fname"
+                android:hint="שם פרטי"
+                android:layout_below="@+id/IDtext"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:textColorLink="?attr/colorPrimary"
+                android:layout_alignEnd="@+id/Lname"
+                android:layout_alignStart="@+id/Lname" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/Lname"
+                android:hint="שם משפחה"
+                android:layout_below="@+id/Fname"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:textColorLink="?attr/colorPrimary"
+                android:layout_alignEnd="@+id/Pnumber"
+                android:layout_alignStart="@+id/Pnumber" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/Pnumber"
+                android:hint="מספר פלאפון"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/Lname"
+                android:textColor="@android:color/black"
+                android:textDirection="rtl"
+                android:textColorLink="?attr/colorPrimary"
+                android:layout_alignEnd="@+id/emailR"
+                android:layout_alignStart="@+id/emailR" />
+
+            <Button
+                android:text="@string/stringbRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bRegister"
+                android:minHeight="50dp"
+                android:minWidth="110dip"
+                android:textColorLink="?attr/colorPrimary"
+                android:background="?attr/colorPrimary"
+                android:layout_alignTop="@+id/passwordR"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/passwordR"
+                android:layout_marginTop="60dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme3" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!-- color primary is used for default action bar background-->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <!-- color primary Dark is used for status bar-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@android:color/background_light</item>
+        <item name="android:textColorPrimary">@android:color/background_light</item>
+    </style>
+
+
+    <style name="MyCustomToolBarTheme" parent="Theme.AppCompat.Light">
+        <!-- text color of the tool bar-->
+        <item name="android:textColorPrimary">#000</item>
+        <!-- color of overflow menu(3 dot icon) and color of navigation drawer icon-->
+        <item name="android:textColorSecondary">#000</item>
+    </style>
+
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColorPrimary">@android:color/background_light</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">?attr/colorPrimary</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="MyTabLayout" parent="Base.Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/omer</item>
+    </style>
+    <style name="omer" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

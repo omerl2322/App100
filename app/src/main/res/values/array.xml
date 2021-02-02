@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name = "OptionsNoise">
+        <item> מבוגרים </item>
+        <item> בני נוער </item>
+        <item> בני מיעוטים </item>
+        <item> אחר </item>
+    </array>
+    <array name = "carOptions">
+        <item> רכב חונה באיסור </item>
+        <item> רכב חוסם </item>
+        <item> רכב נטוש / שרוף </item>
+        <item> רכב משתולל </item>
+        <item> רכב מפריע לתנועה </item>
+        <item> אחר </item>
+    </array>
+    <array name = "SpinnerOptions">
+        <item> גניבה </item>
+        <item> הצתה </item>
+        <item> גרימת נזק </item>
+        <item> אחר </item>
+    </array>
+    <array name = "OptionsInf">
+        <item> תקלת רמזורים </item>
+        <item> תמרורים </item>
+        <item> סימני דרך </item>
+        <item> אחר </item>
+    </array>
+</resources>

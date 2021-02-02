@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/headerColor"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/leftActionBar"
+            android:layout_width="296dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/goBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:padding="7dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/titleActionBar"
+                android:layout_width="218dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/reportOnNoise"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFF"
+                android:textSize="24sp"
+                android:textStyle="normal|bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rightActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/menuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:padding="7dp"
+                android:src="@drawable/menu" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contentPart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="7dp" >
+
+                <TextView
+                    android:id="@+id/detailsAboutTheReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="@string/detailsAboutTheReport"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/headerColor"
+                    android:textStyle="normal|bold" />
+
+                <LinearLayout
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#c0c0c0"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/typeOfEventParent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <LinearLayout
+                        android:id="@+id/typeOfEvent_Input"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <Spinner
+                            android:id="@+id/eventTypeSpinner"
+                            android:layout_height="match_parent"
+                            android:prompt="@string/eventsTypesDialogTitle"
+                            android:layout_width="230dp"
+                            android:entries="@array/eventsTypesNoise" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/typeOfEvent_Label"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:layout_width="160dp">
+
+                        <TextView
+                            android:id="@+id/eventTypeTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/NoisePop"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/describeTheEvent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/describeTheEventTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="7dp"
+                        android:text="@string/describeTheEvent"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+                    <EditText
+                        android:id="@+id/describeTheEventTextBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:background="@drawable/gray_bottom_underline2"
+                        android:ems="10"
+                        android:gravity="top|right"
+                        android:hint="תאר את האירוע במספר מילים"
+                        android:inputType="textMultiLine"
+                        android:maxLines="3"
+                        android:minLines="3"
+                        android:padding="7dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/timeOfTheEvent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <LinearLayout
+                        android:id="@+id/timeOfTheEvent_Input"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <Button
+                            android:id="@+id/chooseDateButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/gray_bottom_underline"
+                            android:padding="7dp"
+                            android:text="00/00/00"
+                            android:textColor="#777777" />
+
+                        <Button
+                            android:id="@+id/chooseTimeButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/gray_bottom_underline"
+                            android:padding="7dp"
+                            android:text="00:00"
+                            android:textColor="#777777" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/timeOfTheEvent_Label"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="right|center_vertical" >
+
+                        <TextView
+                            android:id="@+id/timeOfTheEventTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/timeOfTheEvent"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/locationOfTheEvent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right" >
+
+                        <ImageButton
+                            android:id="@+id/locationButton1"
+                            android:layout_height="23dp"
+                            android:background="#00000000"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/location"
+                            android:layout_width="23dp" />
+
+                        <TextView
+                            android:id="@+id/locationOfTheEventTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:paddingBottom="7dp"
+                            android:text="@string/eventLocation"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/locationOfTheEventTextBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/gray_bottom_underline"
+                        android:ems="10"
+                        android:gravity="top|right"
+                        android:hint="@string/eventLocationInput"
+                        android:inputType="textMultiLine"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:padding="7dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/checkBox"
+                            android:layout_weight="6.40"
+                            android:gravity="right|center_vertical|start"
+                            android:layout_marginLeft="100dp" />
+
+                        <TextView
+                            android:text="@string/alcohol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:paddingBottom="7dp"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                            android:id="@+id/textView13"
+                            android:textDirection="rtl"
+                            android:padding="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/checkBox1"
+                                android:layout_weight="6.40"
+                                android:gravity="right|center_vertical|start"
+                                android:layout_marginLeft="100dp" />
+
+                            <TextView
+                                android:text="@string/Weapon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right|center_vertical"
+                                android:paddingBottom="7dp"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                android:id="@+id/textView113"
+                                android:textDirection="rtl"
+                                android:padding="10dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/eventRecord"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="@string/eventRecord"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/headerColor"
+                    android:textStyle="normal|bold" />
+
+                <LinearLayout
+                    android:id="@+id/divider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#c0c0c0"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/eventRecordTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <ImageButton
+                        android:id="@+id/openfromcamera"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:padding="3dp"
+                        android:scaleType="center"
+                        android:src="@drawable/opencamera" />
+
+                    <ImageButton
+                        android:id="@+id/openfromfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:padding="3dp"
+                        android:scaleType="center"
+                        android:src="@drawable/openfromfile" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/divider3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#c0c0c0"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/opencamera"
+                        android:id="@+id/imageView3"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/places_ic_clear"
+                        android:id="@+id/imageView4"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/places_ic_clear"
+                        android:id="@+id/imageView1"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/headerColor"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/send"
+                    android:textColor="#FFF" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
